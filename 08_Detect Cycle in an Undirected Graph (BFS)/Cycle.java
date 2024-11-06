@@ -29,7 +29,7 @@ public class Cycle {
                 if (vis[adjnodes] == false) {
                     vis[adjnodes] = true;
                     q.add(new Pair(adjnodes, currnode));
-                } else if (prevnode != adjnodes) {
+                } else if (prevnode != adjnodes) { // Already visited node and wo parent nai hai
                     return true;
                 }
             }

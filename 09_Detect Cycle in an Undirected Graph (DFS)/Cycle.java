@@ -22,7 +22,7 @@ public class Cycle {
             if (vis[node] == false) {
                 if (checkCycle(adjList, vis, node, src))
                     return true;
-            } else if (parent != node) {
+            } else if (parent != node) { // Already visited node and wo parent nai hai
                 return true;
             }
         }
